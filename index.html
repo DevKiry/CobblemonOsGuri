@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobblemon - Os Guri | Servidor Pokémon no Minecraft</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">
+    <div class="pokeball-icon"></div>
+    <span>COBBLEMON<br>OS GURI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#galeria">Galeria</a></li>
+    <li><a href="#download">Modpack</a></li>
+    <li><a href="#contato">Contato</a></li>
+    <li><a href="#download" class="cta">⬇ Baixar</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+  <a href="#features" onclick="toggleMenu()">Features</a>
+  <a href="#galeria" onclick="toggleMenu()">Galeria</a>
+  <a href="#download" onclick="toggleMenu()">Modpack</a>
+  <a href="#contato" onclick="toggleMenu()">Contato</a>
+  <a href="#faq" onclick="toggleMenu()">FAQ</a>
+  <a href="#download" class="cta" onclick="toggleMenu()">⬇ Baixar Modpack</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" class="pattern-bg">
+  <div class="hero-pokeball-bg"></div>
+
+  <!-- Particles -->
+  <div class="particle" style="top:20%;left:10%;animation-delay:0s">⭐</div>
+  <div class="particle" style="top:60%;left:5%;animation-delay:2s">✨</div>
+  <div class="particle" style="top:30%;right:8%;animation-delay:1s">⭐</div>
+  <div class="particle" style="top:70%;right:12%;animation-delay:3s">✨</div>
+  <div class="particle" style="top:80%;left:20%;animation-delay:1.5s">⭐</div>
+
+  <div class="hero-content">
+    <div class="hero-badge">🎮 Servidor Disponivel Agora!</div>
+    <h1 class="hero-title">
+      <span class="highlight">COBBLEMON</span><br>
+      <span class="red">OS GURI</span>
+    </h1>
+    <p class="hero-subtitle">Pokémon no Minecraft — Só Os Guri</p>
+    <p class="hero-desc">
+      Capture, treine e batalhe com mais de 900 Pokémon diretamente no Minecraft. 
+      Uma aventura épica com os Guri, do Brasil!
+    </p>
+    <div class="hero-actions">
+      <a href="#download" class="btn btn-primary">⬇ Baixar Modpack</a>
+      <a href="https://discord.gg/seu-link-aqui" class="btn btn-discord" target="_blank">💬 Entrar no Discord</a>
+      <a href="#galeria" class="btn btn-secondary">📸 Ver Galeria</a>
+    </div>
+    <div class="ip-banner">
+      <span class="ip-label">IP DO SERVIDOR</span>
+      <span class="ip-address" onclick="copyIP()" title="Clique para copiar">cobblemon-osguri.minehut.gg</span>
+      <span class="copy-hint">👆 clique para copiar</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <span class="stat-number">900+</span>
+      <span class="stat-label">Pokémon</span>
+    </div>
+    <div class="stat-item reveal" style="transition-delay:0.1s">
+      <span class="stat-number">1.21.1</span>
+      <span class="stat-label">Versão MC</span>
+    </div>
+    <div class="stat-item reveal" style="transition-delay:0.2s">
+      <span class="stat-number">FREE</span>
+      <span class="stat-label">Gratuito</span>
+    </div>
+    <div class="stat-item reveal" style="transition-delay:0.3s">
+      <span class="stat-number">6</span>
+      <span class="stat-label">Players</span>
+    </div>
+  </div>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <h3>QUEM SÃO OS GURI?</h3>
+        <p>
+          Cobblemon - Os Guri é um servidor de Minecraft focado no mod Cobblemon e modpack Cobbleverse, que traz a experiência completa de Pokémon para dentro do Minecraft.
+        </p>
+        <p>
+          Aqui você pode explorar biomas específicos pra encontrar Pokémon selvagens, construir sua base, batalhar com outros jogadores e se tornar o melhor treinador do servidor!
+        </p>
+        <a href="#download" class="btn btn-primary" style="margin-top:1rem">Começar Aventura 🚀</a>
+      </div>
+      <div class="about-visual reveal" style="transition-delay:0.2s">
+        <div class="pokeball-main"></div>
+        <div class="orbit-pokemon">🌿</div>
+        <div class="orbit-pokemon">🔥</div>
+        <div class="orbit-pokemon">💧</div>
+        <div class="orbit-pokemon">⚡</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="pokeball-divider" style="padding:0.5rem 2rem">
+  <div class="pokeball-mini"></div>
+  <div class="pokeball-mini"></div>
+  <div class="pokeball-mini"></div>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">🌟 Características</span>
+      <h2 class="section-title">Sobre o server</h2>
+      <p class="section-desc">Tudo que você precisa pra ter a melhor experiência Pokémon no Minecraft</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <span class="feature-icon">🎮</span>
+        <h3 class="feature-title">MOD COBBLEMON OFICIAL</h3>
+        <p class="feature-text">Usando o melhor mod de Pokémon para Minecraft, com batalhas, capturas, evoluções e muito mais. Tudo autêntico ao universo Pokémon.</p>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:0.1s">
+        <span class="feature-icon">🗺️</span>
+        <h3 class="feature-title">MUNDO ABERTO ENORME</h3>
+        <p class="feature-text">Explore biomas únicos onde cada Pokémon tem seu habitat natural. Florestas, oceanos, desertos, montanhas nevadas e muito mais!</p>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:0.2s">
+        <span class="feature-icon">⚔️</span>
+        <h3 class="feature-title">BATALHAS PVP</h3>
+        <p class="feature-text">Desafie outros treinadores em batalhas épicas. Suba no ranking e mostre que seus Pokémon são os mais fortes do servidor!</p>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:0.3s">
+        <span class="feature-icon">🏆</span>
+        <h3 class="feature-title">GINÁSIOS E LIGAS</h3>
+        <p class="feature-text">Enfrente líderes de ginásio criados pela nossa equipe e colete insígnias. Complete a Liga Pokémon e se torne o Campeão!</p>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:0.4s">
+        <span class="feature-icon">🤝</span>
+        <h3 class="feature-title">COMUNIDADE UNIDA</h3>
+        <p class="feature-text">Discord ativo, eventos semanais, torneios e muito mais! Uma galera que curte Pokémon tanto quanto você, do jeitinho gaúcho.</p>
+      </div>
+      <div class="feature-card reveal" style="transition-delay:0.5s">
+        <span class="feature-icon">🔄</span>
+        <h3 class="feature-title">ATUALIZAÇÕES CONSTANTES</h3>
+        <p class="feature-text">A equipe Os Guri trabalha pra sempre trazer novidades, novos Pokémon, eventos temáticos e melhorias no servidor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIPOS POKEMON -->
+<section id="tipos">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">🔥 Tipos disponíveis em Cobblemon Os Guri</span>
+      <h2 class="section-title">Todos os tipos de Pokémon</h2>
+      <p class="section-desc">O Cobblemon traz todos os 18 tipos da franquia original para o Minecraft</p>
+    </div>
+    <div class="types-grid reveal">
+      <span class="type-chip type-fire">🔥 Fogo</span>
+      <span class="type-chip type-water">💧 Água</span>
+      <span class="type-chip type-grass">🌿 Planta</span>
+      <span class="type-chip type-electric">⚡ Elétrico</span>
+      <span class="type-chip type-psychic">🔮 Psíquico</span>
+      <span class="type-chip type-ice">❄️ Gelo</span>
+      <span class="type-chip type-dragon">🐉 Dragão</span>
+      <span class="type-chip type-dark">🌑 Sombrio</span>
+      <span class="type-chip type-fairy">🌸 Fada</span>
+      <span class="type-chip type-fighting">🥊 Lutador</span>
+      <span class="type-chip type-ground">🌍 Terra</span>
+      <span class="type-chip type-rock">🪨 Pedra</span>
+      <span class="type-chip type-ghost">👻 Fantasma</span>
+      <span class="type-chip type-steel">⚙️ Metal</span>
+      <span class="type-chip type-bug">🐛 Inseto</span>
+      <span class="type-chip type-flying">🦅 Voador</span>
+      <span class="type-chip type-poison">☠️ Veneno</span>
+      <span class="type-chip type-normal">⚪ Normal</span>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">📸 Galeria</span>
+      <h2 class="section-title">Screenshots do Servidor</h2>
+      <p class="section-desc">Veja como é incrível o mundo Cobblemon - Os Guri</p>
+    </div>
+
+    <div class="gallery-grid reveal">
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <span class="pokemon-sprite">🌿🔥💧</span>
+          <span>MUNDO ABERTO</span>
+        </div>
+        <div class="gallery-overlay"><span class="gallery-label">Exploração do Mundo</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <span class="pokemon-sprite">⚔️</span>
+          <span>BATALHA</span>
+        </div>
+        <div class="gallery-overlay"><span class="gallery-label">Batalha Pokémon</span></div>
+      </div>
+      <div class="gallery-item" style="aspect-ratio:16/9">
+        <div class="gallery-placeholder">
+          <span class="pokemon-sprite">🏠</span>
+          <span>BASE DOS GURI</span>
+        </div>
+        <div class="gallery-overlay"><span class="gallery-label">Spawn do Servidor</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <span class="pokemon-sprite">🏆</span>
+          <span>LIGA</span>
+        </div>
+        <div class="gallery-overlay"><span class="gallery-label">Liga Pokémon</span></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">
+          <span class="pokemon-sprite">🌸</span>
+          <span>POKÉMON RARO</span>
+        </div>
+        <div class="gallery-overlay"><span class="gallery-label">Pokémon Lendário</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">📦 Modpack</span>
+      <h2 class="section-title">Como Entrar no Servidor</h2>
+      <p class="section-desc">É fácil e rápido! Siga os passos abaixo e em minutos você estará jogando</p>
+    </div>
+
+    <div class="download-card reveal">
+      <div style="font-size:3rem;margin-bottom:1rem">📦</div>
+      <h3 style="font-family:'Press Start 2P',monospace;font-size:0.8rem;color:var(--yellow);margin-bottom:0.75rem;line-height:1.5">
+        MODPACK COBBLEMON - OS GURI
+      </h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0.5rem">
+        Versão: <strong style="color:var(--text)">Cobblemon 1.21.1</strong> &nbsp;|&nbsp; Tamanho: <strong style="color:var(--text)">~911MB</strong>
+      </p>
+
+      <div class="download-steps">
+        <div class="step">
+          <span class="step-num">01</span>
+          <div class="step-title">Baixe o Modpack</div>
+          <div class="step-desc">Clique no botão abaixo e baixe o modpack pelo Google Drive gratuitamente.</div>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <div class="step-title">Instale o CurseForge</div>
+          <div class="step-desc">Baixe e instale o CurseForge ou TLauncher para gerenciar o modpack.</div>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <div class="step-title">Conecte e Jogue!</div>
+          <div class="step-desc">Abra o jogo, adicione o IP do servidor e comece sua aventura Pokémon!</div>
+        </div>
+      </div>
+
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="https://drive.google.com/seu-link-aqui" class="btn" style="background:var(--yellow);color:var(--dark);box-shadow:0 4px 20px rgba(255,214,0,0.3)" target="_blank">
+          📁 Baixar pelo Google Drive
+        </a>
+        <a href="https://discord.gg/seu-link-aqui" class="btn btn-discord" target="_blank">
+          💬 Suporte no Discord
+        </a>
+      </div>
+
+      <div style="margin-top:1.5rem;padding:1rem;background:rgba(255,255,255,0.03);border-radius:10px;border:1px solid rgba(255,255,255,0.06)">
+        <p style="font-size:0.78rem;color:var(--text-muted);line-height:1.6">
+          ⚠️ <strong style="color:var(--text)">Requisitos mínimos:</strong> Minecraft Java Edition 1.21.1 · 4GB RAM · Java 17+ · Conta Microsoft/Mojang original ou Pirata
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="pokeball-divider" style="padding:0.5rem 2rem">
+  <div class="pokeball-mini"></div>
+  <div class="pokeball-mini"></div>
+  <div class="pokeball-mini"></div>
+</div>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">📱 Contato</span>
+      <h2 class="section-title">Fale com a Gente!</h2>
+      <p class="section-desc">Entre em contato pelo canal que preferir. Estamos sempre prontos pra ajudar!</p>
+    </div>
+
+    <div class="contact-grid">
+      <a href="https://discord.gg/seu-link-aqui" class="contact-card discord reveal" target="_blank">
+        <span class="contact-icon">🎮</span>
+        <h3 class="contact-title">DISCORD</h3>
+        <p class="contact-desc">
+          Nosso servidor oficial! Fique por dentro de novidades, eventos, suporte técnico e conheça a comunidade Os Guri.
+        </p>
+        <span class="contact-btn">Entrar no Discord</span>
+      </a>
+
+      <a href="https://wa.me/55SEU_NUMERO_AQUI" class="contact-card whatsapp reveal" style="transition-delay:0.1s" target="_blank">
+        <span class="contact-icon">📱</span>
+        <h3 class="contact-title">WHATSAPP</h3>
+        <p class="contact-desc">
+          Fale diretamente com a equipe pelo WhatsApp. Tire dúvidas, reporte problemas ou só venha conversar!
+        </p>
+        <span class="contact-btn">Chamar no WhatsApp</span>
+      </a>
+
+      <a href="https://drive.google.com/seu-link-aqui" class="contact-card drive reveal" style="transition-delay:0.2s" target="_blank">
+        <span class="contact-icon">📁</span>
+        <h3 class="contact-title">GOOGLE DRIVE</h3>
+        <p class="contact-desc">
+          Acesse o modpack, tutoriais, screenshots oficiais e todos os arquivos do servidor no nosso Drive.
+        </p>
+        <span class="contact-btn">Acessar o Drive</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">❓ Dúvidas</span>
+      <h2 class="section-title">Perguntas Frequentes</h2>
+      <p class="section-desc">As dúvidas mais comuns da nossa comunidade respondidas</p>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          O servidor é gratuito?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Sim! O Cobblemon - Os Guri é 100% gratuito para jogar. Você só precisa ter o Minecraft Java Edition original e baixar nosso modpack pelo Google Drive, também sem custo nenhum.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Precisa de uma versão específica do Minecraft?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Sim! O servidor roda na versão 1.20.1 do Minecraft Java Edition. Você não conseguirá conectar com outras versões. Certifique-se de usar o launcher correto configurado com a versão certa pelo modpack.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Como eu capturo Pokémon no Cobblemon?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Você encontra Pokémon andando pelo mundo, igual ao jogo original! Para capturar, você precisa craftear Pokébolas usando materiais do Minecraft e Apricorns, que crescem naturalmente pelo mapa. Depois é só arremessar na criatura!
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Tem PvP no servidor?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Sim! Você pode desafiar outros jogadores para batalhas Pokémon através do sistema de desafio do mod. Também temos arenas especiais e eventos de torneio organizados pela nossa equipe regularmente.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Como reportar bugs ou problemas?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Entre no nosso Discord e use o canal #suporte ou fale direto com a equipe pelo WhatsApp. Nossa equipe responde o mais rápido possível e trabalhamos constantemente pra manter o servidor estável.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Consigo jogar pelo Bedrock Edition?
+          <span class="faq-arrow">▼</span>
+        </div>
+        <div class="faq-answer">
+          Infelizmente não. O mod Cobblemon está disponível apenas para o Minecraft Java Edition. Não há suporte para Bedrock, PE ou console no momento.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-pokeballs">
+    <div class="fp red"></div>
+    <div class="fp white"></div>
+    <div class="fp yellow"></div>
+    <div class="fp white"></div>
+    <div class="fp blue"></div>
+    <div class="fp white"></div>
+    <div class="fp red"></div>
+  </div>
+
+  <div class="footer-logo">COBBLEMON - OS GURI</div>
+  <p class="footer-tagline">Pokémon no Minecraft · Só Os Guri</p>
+
+  <div class="footer-links">
+    <a href="#sobre">Sobre</a>
+    <a href="#features">Features</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#download">Modpack</a>
+    <a href="#contato">Contato</a>
+    <a href="#faq">FAQ</a>
+    <a href="https://discord.gg/seu-link-aqui" target="_blank">Discord</a>
+  </div>
+
+  <p class="footer-copy">
+    © 2026 Cobblemon - Os Guri · Não afiliado à The Pokémon Company ou Mojang/Microsoft
+  </p>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✅ IP copiado!</div>
+<script>
+    function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('open');
+  }
+
+  // Close mobile menu on outside click
+  document.addEventListener('click', function(e) {
+    const menu = document.getElementById('mobileMenu');
+    const hamburger = document.querySelector('.hamburger');
+    if (!menu.contains(e.target) && !hamburger.contains(e.target)) {
+      menu.classList.remove('open');
+    }
+  });
+
+  // FAQ toggle
+  function toggleFaq(el) {
+    const item = el.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  // Copy IP
+  function copyIP() {
+    const ip = 'cobblemon-osguri.minehut.gg';
+    navigator.clipboard.writeText(ip).then(() => {
+      const toast = document.getElementById('toast');
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    }).catch(() => {
+      const el = document.querySelector('.ip-address');
+      const original = el.textContent;
+      el.textContent = '✅ Copiado!';
+      setTimeout(() => el.textContent = original, 1500);
+    });
+  }
+
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // Active nav link highlight
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a:not(.cta)');
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        navLinks.forEach(a => {
+          a.style.color = a.getAttribute('href') === '#' + id
+            ? 'var(--red-light)'
+            : '';
+        });
+      }
+    });
+  }, { threshold: 0.5 });
+
+  sections.forEach(s => navObserver.observe(s));
+
+  // Smooth scroll for all anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
